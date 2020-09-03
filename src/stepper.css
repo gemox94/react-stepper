@@ -1,0 +1,70 @@
+
+.stepsContainer {
+    align-items: center;
+}
+
+.stepContent {
+    margin: 20px 0;
+}
+
+.stepNumber {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 500;
+    border: 3px solid #B8C2CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #B8C2CC;
+    z-index: 10;
+}
+
+.activeStep {
+    border-color: #005c98;
+    background-color: #005c98;
+    color: #fff;
+}
+
+.activeStep::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 25px;
+    width: 50%;
+    height: 3px;
+    background-color: #005c98;
+}
+
+.completedStep {
+    border-color: #005c98;
+    background-color: #005c98;
+    color: #fff;
+}
+
+.completedStep::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 25px;
+    width: 50%;
+    height: 3px;
+    background-color: #005c98;
+}
+
+.completedStep::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 25px;
+    width: 50%;
+    height: 3px;
+    background-color: #005c98;
+}
